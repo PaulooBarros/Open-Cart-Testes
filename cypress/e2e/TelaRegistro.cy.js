@@ -29,7 +29,7 @@ describe('Testes de Registro', () => {
     cy.RetornaErroAoRegistrarComEmailEmBranco()
   })
 
-  it.only("Teste de integração com a página de login", ()=>{
+  it("Teste de integração com a página de login", ()=>{
     cy.get('.list-group > [href="https://demo.opencart.com/en-gb?route=account/login"]').click()
 
     cy.url().should('be.equal','https://demo.opencart.com/en-gb?route=account/login' )

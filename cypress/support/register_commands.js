@@ -1,4 +1,4 @@
-const { generateRandomEmail } = require('../support/utils');
+const { generateRandomEmail } = require('./utils');
 const randomEmail = generateRandomEmail();
 Cypress.Commands.add('RetornaSucessoAoFazerRegistroComDadosValidos', ()=>{
     cy.get('#input-firstname')
