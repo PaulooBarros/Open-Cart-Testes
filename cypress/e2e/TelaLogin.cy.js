@@ -5,6 +5,7 @@ describe('Testes de Login', () => {
   
   it('Retorna Sucesso Após Login com Dados Válidos', () => {
     cy.RetornaSucessoLoginDadosValidos()
+  
   })
 
   it('Retorna Erro Após Login com Senha Inválida', ()=>{
